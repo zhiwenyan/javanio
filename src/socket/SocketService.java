@@ -18,7 +18,7 @@ public class SocketService {
         try{
             ServerSocket server=null;
             try{
-                server=new ServerSocket(5209);
+                server=new ServerSocket(5209); //1024-65535 某个接口  
                 //b)指定绑定的端口，并监听此端口。
                 System.out.println("服务器启动成功");
                 //创建一个ServerSocket在端口5209监听客户请求

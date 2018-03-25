@@ -42,10 +42,9 @@ public class TestBlockingNIO {
 	//服务端
 	@Test
 	public void server() throws IOException {
-		//1、获取通道
+	//1、获取通道
 	ServerSocketChannel serverSocketChannel=	ServerSocketChannel.open();
 	FileChannel outChannel=FileChannel.open(Paths.get("2.jpg"), StandardOpenOption.WRITE,StandardOpenOption.CREATE);
-
 	//2、绑定连接
 	serverSocketChannel.bind(new InetSocketAddress(9898));
 	//3、获取客户端连接的通道
